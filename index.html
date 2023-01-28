@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/469c19ed62.js" crossorigin="anonymous"></script>
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img class="logo" src="./img/Logo.png" alt="logo">
+        <h1 class="titulo-principal">Encriptador | ALURA LATAM - ORACLE</h1>
+    </header>
+   
+<main>
+    <section class="cuadrado1">
+        <textarea class="cajaMensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su texto Aqui"></textarea>
+        <div>
+            <h6 class="informacion">Solo letras minúsculas y sin acento</h6>
+        </div>
+
+        <div class="botones">
+            
+            <button class="btn-encriptar" onclick="btnEncriptar()"><i class="fa-solid fa-lock"> </i> ENCRIPTAR</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()" ><i class="fa-solid fa-unlock"></i> DESENCRIPTAR</button>
+        </div>
+    </section>
+
+    <section>
+        <textarea id="mensaje2" class="mensaje" cols="20" rows="10"></textarea>
+        <div class="texto1"  id="mensaje-no-encontrado"> 
+            <p>Ningún mensaje fue encontrado</p>
+        </div>
+
+        <div>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </section>
+</main>    
+    <footer class="footer">
+        <p>Desarrollado por VeroLudemann <a target="_blank" href="https://github.com/veroludemann"><img class="logo-git" src="/img/logotipo-de-github.png" width="18px" alt=""></a>  </p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
